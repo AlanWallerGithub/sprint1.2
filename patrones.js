@@ -14,13 +14,15 @@ class FactoryAleatorio extends Factory{
         super(vidaJugador, defensaJugador);
     }
     factoryMethod(){
-        let numRandom = Math.random()*4;
-        if (numRandom === 1){
+        console.log("in here")
+        let numRandom = Math.floor(Math.random()*3);
+        console.log(numRandom);
+        if (numRandom === 0){
             return new Perro;
-        }else if (numRandom === 2){
+        }else if (numRandom === 1){
             return new Pato;
 
-        }else if (numRandom === 3){
+        }else if (numRandom === 2){
             return new Gato;
         }
     }
@@ -33,27 +35,33 @@ class FactoryEnemigoDañino extends Factory{
     }
 
     factoryMethod(){
+        console.log("in the factory")
         if (this.vidaJugador < 5 && this.defensaJugador === "defensaPato"){
-            let numRandom = Math.random()*3;
-            if (numRandom === 1){
+            console.log("conditions met")
+            let numRandom = Math.floor(Math.random()*2);
+            console.log(numRandom)
+            if (numRandom === 0){
                 return new Perro;
-            }else if (numRandom === 2){
+            }else if (numRandom === 1){
                 return new Gato;
             } 
         }else if (this.vidaJugador < 5 && this.defensaJugador === "defensaPerro"){
-            let numRandom = Math.random()*3;
-            if (numRandom === 1){
-                return new Perro;
-            }else if (numRandom === 2){
+            let numRandom = Math.floor(Math.random()*2);
+            if (numRandom === 0){
+                return new Gato;
+            }else if (numRandom === 1){
                 return new Pato;
             } 
         } else if (this.vidaJugador < 5 && this.defensaJugador === "defensaGato"){
-            let numRandom = Math.random()*3;
-            if (numRandom === 1){
+            let numRandom = Math.floor(Math.random()*2);
+            if (numRandom === 0){
                 return new Perro;
-            }else if (numRandom === 2){
+            }else if (numRandom === 1){
                 return new Pato;
             } 
+        } else{
+            let mensajeFinal = "No se genera"
+            return mensajeFinal;
         }
     }
         //Modifica el FactoryMethod de su clase padre

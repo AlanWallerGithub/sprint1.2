@@ -23,4 +23,4 @@ Otra cosa que podríamos hacer es pasarle parámetros a la clase abstracta Facto
 
 En este caso, no solo hemos podido reducir las líneas de código y repeticiones, sino que además hemos modificado el diseño del juego para que el juego decida por sí mismo, podríamos decir, lo que tiene que instanciar y cuándo lo tiene que instanciar, etc.
 
-HE ESCRITO UN PEQUEÑO EJEMPLO EN JAVASCRIPT, AÑADIDO A ESTE REPOSITORIO, DE CÓMO LO USARÍA MÁS O MENOS
+HE ESCRITO UN PEQUEÑO EJEMPLO EN JAVASCRIPT, AÑADIDO A ESTE REPOSITORIO, DE CÓMO LO USARÍA MÁS O MENOS. ES UNA WEB SENCILLA, EN FORMATO HTML
